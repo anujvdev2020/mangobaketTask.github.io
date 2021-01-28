@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+    --richred:#d83c23;
+    --richyellow:#f9a32f;
+}
+
+html, body {
+    background-color: #fdbc54;
+    margin: 0;
+    padding: 20px;
+  }
+
+ .main{
+     height: 100%;
+     width: 100%;
+     background-color:#ffffff;
+     margin: 30px auto;
+     border-radius: 25px;
+     padding: 5px;
+ } 
+ .navbar{
+    display: flex;
+    padding: 20px;
+ }
+ .nav-brand{
+     padding-left: 15px;
+ }
+ .navbar >.nav-items{
+     margin-left: auto;
+ }
+ .nav-list{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    color: grey;
+}
+ .nav-list > li{
+
+cursor: pointer;
+opacity: 1;
+padding: 5px;
+margin: 0 10px;
+
+
+ }
+ .nav-list > li>a{
+     text-decoration: none;
+     color: grey;
+ }
+ .nav-list > li>a:hover{
+    
+   border-bottom: 2px solid var(--richred);  
+ }
+
+
+ #side-nav-btn{
+     display: none;
+     padding: 12px;
+    height: 12px;
+    width: 22px;
+    border: none;
+    margin: 21px;
+     background-image: url('https://www.flaticon.com/svg/vstatic/svg/633/633647.svg?token=exp=1611770887~hmac=faf64fdab1b98cb5fd188c9aa371ee4c');
+ }
+ .sidenav{
+    height: 100%;
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  
+ #left-title{
+     color: var(--richred);
+ }
+ #right-title{
+     color: var(--richyellow);
+ }
+ #random-txt{
+     color: grey;
+ }
+ .content{
+     display: flex;
+     padding: 0 10px;
+    
+     justify-content: space-between;
+ }
+ .left-content{
+    
+        padding: 10px;
+        margin: 15px;
+ }
+ .right-content{
+    padding: 10px;
+        margin: 15px;
+ }
+ #brand-text{
+     color: grey;
+     
+     
+ }
+ #order-btn{
+    background-color: var(--richred);
+    border: none;
+    padding: 12px;
+    border-radius: 16px;
+    box-shadow: 1px 2px 13px var(--richred);
+  
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 10px;
+ }
+ #cart{
+     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVpdI5LsbKkCpTLBtHH8PD9blq5MCP0maAxg&usqp=CAU');
+     background-size: cover;
+     height: 40px;
+     width: 40px;
+     border: none;
+     cursor: pointer;
+     margin-top: -5px;
+ }
+ .img-banner {
+   width: 430px ;
+   height: auto; 
+   border-radius: 25px;
+    box-shadow: -2px -1px 14px 14px #fdbc54;
+  }
+
+.items-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.item{
+    display: flex;
+    background-color: #ffffff;
+    margin: 8px;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow:2px 8px 14px 4px silver;
+    
+}
+.mango-img{
+    height: 150px;
+}
+.addCart-button{
+    color: var(--richyellow);
+    border: none;
+    padding: 10px;
+   background: transparent;
+    
+   
+    font-size: 1.2rem;
+    margin-top: 10px;
+
+}
+.info{
+    font-size: 12px;
+    color: grey;
+}
+.products{
+    margin: 20px;
+    padding: 10px;
+}
+
+@media (max-width:425px){
+    body{
+        padding: 10px;
+    }
+    .content{
+        flex-wrap: wrap;
+    }
+    .img-banner{
+       width: 200px;
+       height: auto;
+      margin: 10px auto;
+      }
+      .nav-items{
+          display: none;
+      }
+      .nav-brand{
+          padding: 0;
+          font-size: 12px;
+      }
+      .right-content{
+          margin: 5px;
+      }
+      .mobile-nav-items{
+          display: block;
+
+      }
+      #side-nav-btn{
+          display:block;
+       
+          
+      }
+      .mango-img{
+        height: 100px;
+    }
+}
+.wrapper{
+    display: block;
+    background-color: #111;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.anime-container{
+    text-align: center;
+    margin-top: 50vh;
+
+}
+.anime{
+    height: 80px;
+    width: 80px;
+    background-color: gold;
+    animation: rotation 2s infinite linear;
+    
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
